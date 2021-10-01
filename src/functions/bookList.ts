@@ -1,4 +1,5 @@
-const books= [
+import book from "../interface/book";
+const buecher2021:book[]= [
     {
         titel: "Leonardo Da Vinci für Eilige",
         autor_in: "Henning Klüver",
@@ -100,7 +101,9 @@ const books= [
         autor_in: "Semiya Şimşek und Peter Schwarz",
         typ: "buch",
         jahr: 2021
-    },
+    }
+]
+const hoerbucher2021:book[] = [
     {
         titel: "Harry Potter 1",
         autor_in: "Joanne K. Rowling",
@@ -212,7 +215,9 @@ const books= [
         typ: "hörbuch",
         jahr: 2021
 
-    },
+    }
+]
+const buecher2020:book[] = [
     {
         titel: "Der junge im gestreifen Pyjama",
         autor_in: "John Boyne",
@@ -352,7 +357,9 @@ const books= [
         typ: "buch",
         jahr: 2020
 
-    },
+    }
+]
+const hoerbucher2020:book[] = [
     {
         titel: "Skulduggery Pleasant 1",
         autor_in: "Derek Landy",
@@ -492,7 +499,9 @@ const books= [
         typ: "hörbuch",
         jahr: 2020
 
-    },
+    }
+]
+const buecher2019:book[] = [
     {
         titel: "V wie Vendetta",
         autor_in: "Alan Moore",
@@ -655,12 +664,12 @@ const books= [
 
     }
 ];
-
-let unsortedBooks:any = books;
-let bookDesign:number;
+let books:book[] = buecher2021;
+books = books.concat(hoerbucher2021, buecher2020, hoerbucher2020,buecher2019)
+let unsortedBooks = books;
+let bookDesign:number = 2;
 for (let i:number = 0; i < unsortedBooks.length; i++){
     if (i>0 && unsortedBooks[i].autor_in === unsortedBooks[i-1].autor_in){
-        bookDesign= unsortedBooks[i-1].bookDesign;
         unsortedBooks[i].bookDesign = bookDesign;
     }
     else{
