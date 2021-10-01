@@ -1,0 +1,93 @@
+
+$secondary : aliceblue;
+@import "../node_modules/bootstrap/scss/bootstrap";
+body{
+  background-color: #2f5d98;
+}
+
+#bookshelf{
+  border: saddlebrown 20px solid;
+  height: fit-content;
+  background: linear-gradient(0deg, rgba(139,69,19,1) 7%, rgba(71,33,11,1) 10%) 0px 0px / 411px 440px repeat repeat;
+}
+/* Layout der BÃ¼cher*/
+.buch{
+  height: 400px;
+  width: max-content;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 1fr;
+  grid-template-areas: "titel""autor";
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.1s;
+  cursor: pointer;
+  box-shadow: 2px -1px 4px black;
+  span{
+    writing-mode: vertical-rl;
+    display: inline;
+    justify-self: center;
+  }
+
+  .titel{
+    grid-area: titel;
+  }
+  .autor{
+    grid-area: autor;
+  }
+}
+.buch:hover {
+  transform: scale(1.5);
+  z-index: 2;
+}
+/*Aussehen der Bücher*/
+.buch1{
+  height: 380px;
+  background: hsla(359, 93%, 60%, 1);
+  background: linear-gradient(90deg, hsla(359, 93%, 60%, 1) 30%, hsla(359, 93%, 47%, 1) 70%);
+}
+.buch2{
+  height: 397px;
+  background: hsla(21, 89%, 56%, 1);
+  background: linear-gradient(90deg, hsla(21, 89%, 56%, 1) 30%, hsla(21, 89%, 46%, 1) 70%);
+}
+.buch3{
+  height: 388px;
+  background: hsla(256, 65%, 65%, 1);
+  background: linear-gradient(90deg, hsla(256, 65%, 65%, 1) 30%, hsla(256, 65%, 55%, 1) 70%);
+}
+.buch4{
+  height: 398px;
+  background: hsla(20, 94%, 63%, 1);
+  background: linear-gradient(90deg, hsla(20, 94%, 63%, 1) 30%, hsla(20, 94%, 53%, 1) 70%);
+}
+.buch5{
+  height: 350px;
+  background: hsla(42, 93%, 64%, 1);
+  background: linear-gradient(90deg, hsla(42, 93%, 64%, 1) 30%, hsla(42, 93%, 54%, 1) 70%);
+}
+.buch6{
+  height: 392px;
+  background: hsla(94, 38%, 59%, 1);
+  background: linear-gradient(90deg, hsla(94, 38%, 59%, 1) 30%, hsla(93, 38%, 49%, 1) 70%);
+}
+.buch7{
+  height: 360px;
+  background: hsla(162, 43%, 46%, 1);
+  background: linear-gradient(90deg, hsla(162, 43%, 46%, 1) 30%, hsla(163, 43%, 36%, 1) 70%);
+}
+.buch8{
+  height: 395px;
+  background: hsla(178, 30%, 43%, 1);
+  background: linear-gradient(90deg, hsla(178, 30%, 43%, 1) 30%, hsla(179, 30%, 33%, 1) 70%);
+}
+.buch9{
+  height: 399px;
+  background: hsla(208, 25%, 45%, 1);
+  background: linear-gradient(90deg, hsla(208, 25%, 45%, 1) 30%, hsla(208, 25%, 35%, 1) 70%);
+}
+.buch10{
+  background: hsla(198, 61%, 39%, 1);
+  background: linear-gradient(90deg, hsla(198, 61%, 39%, 1) 30%, hsla(198, 61%, 29%, 1) 70%);
+}
