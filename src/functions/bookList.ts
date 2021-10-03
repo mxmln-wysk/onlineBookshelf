@@ -215,6 +215,13 @@ const hoerbucher2021:book[] = [
         typ: "hörbuch",
         jahr: 2021
 
+    },
+    {
+        titel: "Gullivers Reisen",
+        autor_in: "Jonathan Swift",
+        typ: "hörbuch",
+        jahr: 2021
+
     }
 ]
 const buecher2020:book[] = [
