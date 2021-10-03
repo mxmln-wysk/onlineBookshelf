@@ -2,7 +2,7 @@ import book from "../interface/book";
 import index from "../interface";
 
 
-export default function sorting(sortBy:index,books:book[]){
+export default function sorting(sortBy:index,books:book[],direction:boolean){
 
     return books.sort((bookA: book, bookB: book) => {
         let bookOne = bookA[sortBy];

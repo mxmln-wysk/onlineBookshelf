@@ -15,8 +15,12 @@ let firstStateIndex:index = "jahr";
 export default function App() {
     const [isOpen, toggleModal] = useState(false);
     const [searchValue, changeSearch] = useState("");
-    const [sortedBy, changeSort] = useState(firstStateIndex)
+    const [sortedBy, changeSort] = useState(firstStateIndex);
+    const [isAsc,changeAsc] = useState(true);
 
+    const changeDirection = () =>{
+        changeAsc(!isAsc)
+    }
     const sortBtn = (childData:any) => {
       changeSort(childData)
     }
@@ -38,9 +42,9 @@ export default function App() {
               value={searchValue}
               onChange={handleChange}
           />
-          <Sort sortFunc={sortBtn} arr={searchedBook}/>
+          <Sort sortFunc={sortBtn} changeAsc={changeDirection} current={sortedBy} direction={isAsc} arr={searchedBook}/>
           <div id={"bookshelf"} className={"row pe-2"}>
-              {sorting(sortedBy, searchedBook).map((currentBook:book) =>
+              {sorting(sortedBy, searchedBook,isAsc).map((currentBook:book) =>
                   <Book titel={currentBook.titel}
                         autor_in={currentBook.autor_in}
                         typ={currentBook.typ}
