@@ -22,18 +22,18 @@ export default function Sort(props:any){
 }
 function SortBtn(props:any){
     return(
-        <button className={"col btn btn-info m-1"}  onClick={()=>props.onClick(props.title)}>
+        <button 
+            className={"col btn btn-info m-1"}  
+            onClick={()=> props.current === props.title ? props.changeAsc(): props.onClick(props.title)}
+            >
             {props.title +" "}
-            {props.current === props.title ? <ChangeDirection changeAsc={props.changeAsc} direction={props.direction}/>: ""}
+            {props.current === props.title ? <Direction direction={props.direction}/>: ""}
         </button>
     )
 }
 
-const ChangeDirection = (props:any) => {
+const Direction = (props:any) => {
     return(
-        <button className={"btn btn-outline-primary"} onClick={()=>{props.changeAsc()}}>
-            <FontAwesomeIcon icon={props.direction ? faSortUp : faSortDown}/>
-        </button>
-        
+            <FontAwesomeIcon icon={props.direction ? faSortUp : faSortDown}/>  
     )
 }
