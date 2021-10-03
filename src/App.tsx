@@ -16,9 +16,10 @@ export default function App() {
     const [isOpen, toggleModal] = useState(false);
     const [searchValue, changeSearch] = useState("");
     const [sortedBy, changeSort] = useState(firstStateIndex)
-
+    const[lastSort, changeLastSort] = useState(firstStateIndex)
     const sortBtn = (childData:any) => {
-      changeSort(childData)
+        changeLastSort(sortedBy);
+        changeSort(childData)
     }
     const showModal = (props:book) =>{
         toggleModal(true);
@@ -40,7 +41,7 @@ export default function App() {
           />
           <Sort sortFunc={sortBtn} arr={searchedBook}/>
           <div id={"bookshelf"} className={"row pe-2"}>
-              {sorting(sortedBy, searchedBook).map((currentBook:book) =>
+              {sorting(sortedBy, searchedBook,lastSort).map((currentBook:book) =>
                   <Book titel={currentBook.titel}
                         autor_in={currentBook.autor_in}
                         typ={currentBook.typ}
