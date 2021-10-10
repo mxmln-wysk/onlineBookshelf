@@ -14,7 +14,7 @@ export default function sorting(sortBy:index,books:book[],direction:boolean){
             return 0
         }
     });
-    if(direction == false){
+    if(direction === false){
         books.reverse()
     }
     return books;

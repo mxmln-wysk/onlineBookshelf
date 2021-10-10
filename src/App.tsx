@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import Book from "./components/book";
 import unsortedBooks from "./functions/bookList"
 import BookModal from "./components/modal";

@@ -6,34 +6,26 @@ export default function Sort(props:any){
     return(
         <div className={"row mb-3"}>
             <h2 className={"col-3 text-secondary"}>Sortiere nach:</h2>
-            {sortBtn.map((item,index) =>
-                <SortBtn 
-                bookArr={props.arr}  
-                current={props.current}
-                direction={props.direction} 
-                key={index} title={item} 
-                onClick={props.sortFunc}
-                changeAsc={props.changeAsc}
-                />
-                
+            {sortBtn.map((title) =>
+                SortBtn(props.current, props.direction, title, props.sortFunc,props.changeAsc)                
             )}
         </div>
     )
 }
-function SortBtn(props:any){
+function SortBtn(current:string, direction:boolean, title:string, onClick:any, changeAsc:any){
     return(
         <button 
             className={"col btn btn-info m-1"}  
-            onClick={()=> props.current === props.title ? props.changeAsc(): props.onClick(props.title)}
+            onClick={()=> current === title ? changeAsc(): onClick(title)}
             >
-            {props.title +" "}
-            {props.current === props.title ? <Direction direction={props.direction}/>: ""}
+            {title +" "}
+            {current === title ? Direction(direction): ""}
         </button>
     )
 }
 
-const Direction = (props:any) => {
+const Direction = (direction:boolean) => {
     return(
-            <FontAwesomeIcon icon={props.direction ? faSortUp : faSortDown}/>  
+            <FontAwesomeIcon icon={direction ? faSortUp : faSortDown}/>  
     )
 }
