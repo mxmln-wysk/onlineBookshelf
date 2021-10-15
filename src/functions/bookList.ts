@@ -101,6 +101,12 @@ const buecher2021:book[]= [
         autor_in: "Semiya Şimşek und Peter Schwarz",
         typ: "buch",
         jahr: 2021
+    },
+    {
+        titel: "Das Mädchen, das von Freiheit träumte",
+        autor_in: "Tilli Schulze und Lorena Collier",
+        typ: "buch",
+        jahr: 2021
     }
 ]
 const hoerbucher2021:book[] = [
