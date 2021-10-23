@@ -374,63 +374,63 @@ const buecher2020:book[] = [
 ]
 const hoerbucher2020:book[] = [
     {
-        titel: "Skulduggery Pleasant 1",
+        titel: "Skulduggery Pleasant 01",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 2",
+        titel: "Skulduggery Pleasant 02",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 3",
+        titel: "Skulduggery Pleasant 03",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 4",
+        titel: "Skulduggery Pleasant 04",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 5",
+        titel: "Skulduggery Pleasant 05",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 6",
+        titel: "Skulduggery Pleasant 06",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 7",
+        titel: "Skulduggery Pleasant 07",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 8",
+        titel: "Skulduggery Pleasant 08",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
 
     },
     {
-        titel: "Skulduggery Pleasant 9",
+        titel: "Skulduggery Pleasant 09",
         autor_in: "Derek Landy",
         typ: "hörbuch",
         jahr: 2020
