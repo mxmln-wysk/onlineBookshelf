@@ -107,6 +107,12 @@ const buecher2021:book[]= [
         autor_in: "Tilli Schulze und Lorena Collier",
         typ: "buch",
         jahr: 2021
+    },
+    {
+        titel: "Morgen ist leider auch noch ein Tag",
+        autor_in: "Tobi Katze",
+        typ: "buch",
+        jahr: 2021
     }
 ]
 const hoerbucher2021:book[] = [
