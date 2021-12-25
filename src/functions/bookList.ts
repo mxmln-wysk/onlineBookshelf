@@ -113,6 +113,12 @@ const buecher2021:book[]= [
         autor_in: "Tobi Katze",
         typ: "buch",
         jahr: 2021
+    },
+    {
+        titel: "Skulduggery Pleasant 14",
+        autor_in: "Derek Landy",
+        typ: "buch",
+        jahr: 2021
     }
 ]
 const hoerbucher2021:book[] = [
