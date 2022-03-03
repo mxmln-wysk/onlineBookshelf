@@ -1,4 +1,37 @@
 import book from "../interface/book";
+const buecher2022:book[]= [
+    {
+        titel: "No More Bullshit",
+        autor_in: "SORORITY",
+        typ: "buch",
+        jahr: 2022
+    },
+    {
+        titel: "Biss zum Morgengrauen",
+        autor_in: "Stephenie Meyer",
+        typ: "buch",
+        jahr: 2022
+    },
+    {
+        titel: "Biss zur Mittagsstunde",
+        autor_in: "Stephenie Meyer",
+        typ: "buch",
+        jahr: 2022
+    },
+    {
+        titel: "Biss zum Abendbrot",
+        autor_in: "Stephenie Meyer",
+        typ: "buch",
+        jahr: 2022
+    },
+    {
+        titel: "Biss zum Ende der Nacht",
+        autor_in: "Stephenie Meyer",
+        typ: "buch",
+        jahr: 2022
+    },
+]
+
 const buecher2021:book[]= [
     {
         titel: "Leonardo Da Vinci für Eilige",
@@ -67,7 +100,7 @@ const buecher2021:book[]= [
         jahr: 2021
     },
     {
-        titel: "James Potter the Curse of the Gatekeeper",
+        titel: "James Potter the the Curse of the Gatekeeper",
         autor_in: "G. Norman Lippert",
         typ: "buch",
         jahr: 2021
@@ -689,8 +722,8 @@ const buecher2019:book[] = [
 
     }
 ];
-let books:book[] = buecher2021;
-books = books.concat(hoerbucher2021, buecher2020, hoerbucher2020,buecher2019)
+let books:book[] = buecher2022;
+books = books.concat(buecher2021, hoerbucher2021, buecher2020, hoerbucher2020,buecher2019)
 let unsortedBooks = books;
 let bookDesign:number = 2;
 for (let i:number = 0; i < unsortedBooks.length; i++){
