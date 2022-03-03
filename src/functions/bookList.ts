@@ -100,7 +100,7 @@ const buecher2021:book[]= [
         jahr: 2021
     },
     {
-        titel: "James Potter the the Curse of the Gatekeeper",
+        titel: "James Potter and the Curse of the Gatekeeper",
         autor_in: "G. Norman Lippert",
         typ: "buch",
         jahr: 2021
